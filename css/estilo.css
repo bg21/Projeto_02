@@ -1,0 +1,276 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style-position: inside;
+	font-family: 'Open Sans', sans-serif;
+}
+html,body{
+	height: 100%;
+}
+.clear{
+	clear: both;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.w30{
+	width: 30%;
+}
+.w50{
+	width: 50%;
+}
+.w70{
+	width: 70%;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.arrow{
+	background-image: url('../imgs/arrow.png');
+	width: 64px;
+	height: 64px;
+	margin: 0 auto;
+	background-size: 100% 100%;
+	position: relative;
+	top: 30px;
+	animation: move 2s infinite;
+}
+@keyframes move{
+	0%{
+		top: 30px;
+	}
+	80%{
+		top:80px;
+	}
+	100%{
+		top: 30px;
+	}
+}
+
+header{
+	/*background-color:rgb(255, 153, 0);*/
+	background-color:rgba(255, 71, 26, 1);
+	padding: 10px 0;
+}
+nav.desktop{
+	position: relative;
+	top: 18px;
+}
+nav.desktop ul{
+	list-style-type: none;
+}
+nav.desktop ul li{
+	display: inline-block;
+	padding: 0 15px;
+}
+nav.desktop ul li a{
+	text-decoration: none;
+	color: white;
+	font-weight: lighter;
+}
+nav.desktop ul li a:hover{
+	text-decoration: underline;
+}
+div.logo{
+	background-color: #ccc;
+	background-image: url('../imgs/logo.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 60px;
+}
+div.logo2{
+	background-color: #ccc;
+	background-image: url('../imgs/logo2.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 70px;
+}
+section.form{
+	width: 100%;
+}
+div.banner{
+	background-image: url('../imgs/bg.jpg');
+	width: 100%;
+	height: 600px;
+	padding: 20px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+}
+h3.title{
+	background-color:rgba(255, 71, 26, 1);
+	padding: 15px;
+	color: white;
+	font-weight: normal;
+	font-size: 24px;
+}
+div.inputs{
+	padding: 10px;
+}
+div.inputs h3{
+	color: #333;
+	margin-top: 10px;
+	font-weight: lighter;
+	font-size: 18px;
+}
+form div.inputs input[type=text], select{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border: 0;
+	padding-left: 10px;
+	margin-top: 5px;
+	color: white;
+	font-size: 18px;
+	background-color: rgba(255, 71, 26, 0.7)
+}
+form div.inputs input[type=submit]{
+	width: 100%;
+	height: 40px;
+	border: 0;
+	cursor: pointer;
+	margin-top: 20px;
+	background-color:#ff3300;
+	color: white;
+	font-size: 22px;
+}
+div.form-container{
+	max-width: 320px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(242, 242, 242, 0.8);
+}
+
+section.chamada{
+	background-color:rgba(255, 153, 0, 0.8);
+	width: 100%;
+	padding: 20px;
+}
+section.chamada h2{
+	color: white;
+	font-weight: lighter;
+	font-size: 30px;
+	text-align: center;
+}
+section.galery{
+}
+div.box{
+	display: flex;
+	border-top: 1.5px solid #ccc;
+	border-bottom: 1.5px solid #ccc;
+}
+div.item1{
+	background-size:cover;
+	background-position: center;
+	width: 60%;
+}
+div.item2{
+	width: 40%;
+	padding: 80px 30px;
+	background-color: rgba(255, 71, 26, 1);
+}
+div.item2 p{
+	color: white;
+	font-weight: lighter;
+}
+section.contato{
+}
+div.cont-contato{
+	background-color:rgba(255, 153, 0, 0.8);
+	padding: 20px;
+	display: flex;
+}
+div.map{
+	width: 70%;
+}
+div.tel{
+	width: 30%;
+}
+div.tel h3{
+	color: white;
+	font-weight: lighter;
+	margin-top: 10px;
+	font-size: 22px;
+}
+div.tel h2{
+	color: #333;
+	margin-top: 10px;
+	font-weight: lighter;
+	font-size: 18px;
+}
+div.tel p{
+	color: #333;
+	margin-top: 10px;
+	font-weight: lighter;
+	font-size: 18px;
+}
+
+footer{
+	background-color: rgba(255, 71, 26, 1);
+	padding: 20px;
+}
+footer h3{
+	color: white;
+	font-weight: lighter;
+	text-align: center;
+}
+@media screen and (max-width: 960px) and (min-width: 770px){
+	div.form-container{
+		width: 100%;
+		max-width: 500px;
+		text-align: left;
+	}
+}
+@media screen and (max-width: 768px){
+	section.form{
+		text-align: center;
+	}
+	div.form-container{
+		float: none;
+		display: inline-block;
+	}
+	div.form-container{
+		width: 100%;
+		max-width: 500px;
+		text-align: left;
+	}
+	div.logo{
+		margin-left: 10px;
+	}
+	div.cont-contato{
+		display: block;
+	}
+	div.map{
+		width: 100%;
+	}
+	div.tel{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 640px){
+	div.box, div.cont-contato{
+		display: block;
+	}
+	div.item1{
+		padding-top: 100%;
+		width: 100%;
+	}
+	div.map{
+		width: 100%;
+	}
+	div.item2, div.tel{
+		width: 100%;
+	}
+}
